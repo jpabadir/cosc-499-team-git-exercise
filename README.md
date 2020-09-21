@@ -8,7 +8,7 @@ The aim of this git exercise is to create a multi-purpose program, which will be
 Possible actions: 
 
 A) Convert a given sum in USDs to CAD (at a pre-programmed rate); </br>
-- Within the class MainDriver's main method exist two methods for converting a user's numeric input from USD to CAD.
+MainDriver.java's main method contains two methods for converting a user's numeric input from USD to CAD.
 1) getNumericInput 
 - Prompts the user to enter a value. If it is a number, that value will be returned, otherwise, the program will stop.
 2) convert
