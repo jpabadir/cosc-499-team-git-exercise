@@ -45,7 +45,7 @@ public class MainDriver {
     }
 
     // method to convert the user's inputted double from USD to CAD
-    public static double convert(double dollars){ 
+    private static double convert(double dollars){ 
         double conversionRate = 1.32; //according to Google, $1USD = $1.32CAD
         dollars *= conversionRate;
         return dollars; 
