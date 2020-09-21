@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class MainDriver {
     public static void main(String[] args) {
         System.out.println("Welcome to Leo, you virtual assistant!What would you like to do, today?");
-        System.out.print("Please type either 'Convert', 'Doubled5', or 'InvertCase': ");
+        System.out.print("Please type either 'Convert', 'Double5', or 'InvertCase': ");
         Scanner scanner = new Scanner(System.in);
         String response = scanner.next();
         scanner.close();
