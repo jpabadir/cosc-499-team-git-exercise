@@ -9,7 +9,7 @@ Possible actions:
 
 A) Convert a given sum in USDs to CAD (at a pre-programmed rate); </br>
 - Within the class MainDriver's main method exist two methods for converting a user's numeric input from USD to CAD.
-1)getNumericInput 
+1) getNumericInput 
 - Prompts the user to enter a value. If it is a number, that value will be returned, otherwise, the program will stop.
 2) convert
 - Takes in the double value that the user entered, and multiplies by it by the conversion rate from USD to CAD from 09/20/2020.
