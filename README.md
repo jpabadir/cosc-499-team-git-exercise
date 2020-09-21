@@ -8,7 +8,7 @@ The aim of this git exercise is to create a multi-purpose program, which will be
 Possible actions: 
 
 A) Convert a given sum in USDs to CAD (at a pre-programmed rate); </br>
-B) Computes the double of the number 5 ; </br>
+B) Compute the product of 5 integers which the user inputs; </br>
 C) Take a string from the user, and return the same string with all uppercase letters as lowercase, and vice-versa </br>
 
 In all cases, we will deal with bad input from the user by using an if condition to check for such input, print an error message, and then interrupt the program. 
@@ -22,5 +22,12 @@ and then prompt the user to choose an action out of three possible functions the
 the main driver then calls the appropriate function and prints to the user the appropriate output. If not, the main driver 
 prints an error message to the user, and then terminates the program. 
 
-<b>Double 5 Feature:</b>
-The *Double 5* feature takes the number 5 as an input and returns the double of 5 by using the *doubled* method.
+<b>Conversion Feature:</b>
+MainDriver.java's main method contains two methods for converting a user's numeric input from USD to CAD.
+1) getNumericInput 
+- Prompts the user to enter a value. If it is a number, that value will be returned, otherwise, the program will stop.
+2) convert
+- Takes in the double value that the user entered, and multiplies by it by the conversion rate from USD to CAD from 09/20/2020.
+- Within MainTest.java is the junit test "testConvert" to ensure that the implemntation of the convert method works as expected.
+3)
+- Doubles the number 5. Uses doubled method to double 5.
