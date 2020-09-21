@@ -40,7 +40,7 @@ public class MainDriver {
         } catch (InputMismatchException e) { //in the case that a value other than an int or a double is entered
                 System.out.println("That was not a valid numeric. Please rerun the program to try again");
                 System.exit(-1); //just ending the system if this happens at the moment. Can change implementation if needed.
-            }
+        }
         return userValue;
     }
 
