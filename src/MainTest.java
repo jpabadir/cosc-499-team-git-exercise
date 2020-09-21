@@ -39,7 +39,7 @@ public class MainTest {
 
     @Test
     public void testMainDriverAdd() {
-        testMainDriverWithParameters("add", "Add mode:\n");
+        testMainDriverWithParameters("double5", "Double 5 mode:\n");
     }
 
     @Test
@@ -50,6 +50,15 @@ public class MainTest {
     @Test
     public void testMainDriverInvalid() {
         testMainDriverWithParameters("some random string", "Sorry, I didn't get that. Re-run the program to try again!");
+    }
+
+    //junit test for double method:
+    @Test
+    public void testDouble(){
+        double answer = MainDriver.doubled(5);
+        double expectedAnswer = 25;
+
+        assertEquals(expectedAnswer,answer,0);
     }
 
     private void testMainDriverWithParameters(String input, String output) {
