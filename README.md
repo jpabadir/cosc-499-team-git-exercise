@@ -33,5 +33,5 @@ MainDriver.java's main method contains two methods for converting a user's numer
 <b>Square Feature:</b>
 Squares the number 5 and outputs 25. Uses the doubled method to test that the double5 feature works.
 
-<b>cube Feature:</b>
+<b>Cube Feature:</b>
 Cubes the number 10 and outputs 1000. Uses the tripled method to test that the triple10 feature is working correctly.
