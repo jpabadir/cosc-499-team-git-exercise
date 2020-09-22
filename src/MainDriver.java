@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class MainDriver {
     public static void main(String[] args) {
         System.out.println("Welcome to Leo, you virtual assistant!What would you like to do, today?");
-        System.out.print("Please type either 'Convert', 'Double5', or 'InvertCase': ");
+        System.out.print("Please type either 'Convert', 'Double5', or 'Triple10': ");
         Scanner scanner = new Scanner(System.in);
         String response = scanner.next();
 
@@ -23,9 +23,12 @@ public class MainDriver {
             double doubleVal =  5; //number to double
             double doubled = doubled(doubleVal); //doubles number
             System.out.println("5 doubled is: "+doubled);
-        } else if (response.equalsIgnoreCase("InvertCase")) {
-            System.out.println("Invert case mode:");
+        } else if (response.equalsIgnoreCase("triple10")) {
+            System.out.println("Triple10 mode:");
             // Add code to handle this case here. Do not remove above print statement.
+            double tripleVal =  10; //number to double
+            double tripled = tripled(tripleVal); //doubles number
+            System.out.println("10 tripled is: "+ tripled);
         } else {
             System.out.print("Sorry, I didn't get that. Re-run the program to try again!");
         }
@@ -58,5 +61,8 @@ public class MainDriver {
     public static double doubled(double n) {
         return n*n;
     }
+
+    //method to triple number
+    public static double tripled(double n) {return n*n*n;}
 
 }
