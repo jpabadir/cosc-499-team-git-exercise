@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class MainDriver {
     public static void main(String[] args) {
         System.out.println("Welcome to Leo, you virtual assistant!What would you like to do, today?");
-        System.out.print("Please type either 'Convert', 'Add', or 'InvertCase': ");
+        System.out.print("Please type either 'Convert', 'Double5', or 'InvertCase': ");
         Scanner scanner = new Scanner(System.in);
         String response = scanner.next();
 
@@ -17,9 +17,12 @@ public class MainDriver {
             double convertedInput = convert(userNumeric); // stores the double after performing the conversion from
                                                         // calling the convert method
             System.out.printf("%.2f USD is %.2f CAD", userNumeric, convertedInput); // displays the value to the user
-        } else if (response.equalsIgnoreCase("add")) {
-            System.out.println("Add mode:");
+        } else if (response.equalsIgnoreCase("double5")) {
+            System.out.println("Double5 mode:");
             // Add code to handle this case here. Do not remove above print statement.
+            double doubleVal =  5; //number to double
+            double doubled = doubleVal*doubleVal; //doubles number
+            System.out.println("5 doubled is: "+doubled);
         } else if (response.equalsIgnoreCase("InvertCase")) {
             System.out.println("Invert case mode:");
             // Add code to handle this case here. Do not remove above print statement.
@@ -45,11 +48,15 @@ public class MainDriver {
     }
 
     // method to convert the user's inputted double from USD to CAD
-    private static double convert(double dollars){ 
+    static double convert(double dollars){
         double conversionRate = 1.32; //according to Google, $1USD = $1.32CAD
         dollars *= conversionRate;
         return dollars; 
     }
 
+    //method to double number
+    public static double doubled(double n) {
+        return n*n;
+    }
 
 }
