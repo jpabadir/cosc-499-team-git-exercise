@@ -66,6 +66,14 @@ public class MainTest {
         assertEquals(expectedAnswer,answer,0);
     }
 
+    //junit test for triple method:
+    @Test
+    public void testTriple(){
+        double answer = MainDriver.tripled(10);
+        double expectedAnswer = 1000;
+        assertEquals(expectedAnswer,answer,0);
+    }
+
     private void testMainDriverWithParameters(String input, String output) {
         // Simulate user input by using an input stream
         final ByteArrayInputStream inContent = new ByteArrayInputStream(input.getBytes());

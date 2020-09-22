@@ -31,3 +31,5 @@ MainDriver.java's main method contains two methods for converting a user's numer
 - Within MainTest.java is the junit test "testConvert" to ensure that the implemntation of the convert method works as expected.
 3) double5
 - Doubles the number 5 and outputs 25. Uses the doubled method to test that the double5 feature works.
+4) triple10
+- Triples the number 10 and outputs 1000. Uses the tripled method to test that the triple10 feature is working correctly.
