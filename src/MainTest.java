@@ -62,6 +62,13 @@ public class MainTest {
         assertEquals(expectedValue, actual, 0);
     }
 
+    //junit test for double method:
+    @Test
+    public void testDouble(){
+        double answer = MainDriver.doubled(5);
+        double expectedAnswer = 25;
+        assertEquals(expectedAnswer,answer,0);
+    }
 
     private void testMainDriverWithParameters(String input, String output) {
         // Simulate user input by using an input stream
