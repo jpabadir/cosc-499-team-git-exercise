@@ -12,6 +12,7 @@ import java.io.PrintStream;
 
 import static org.junit.Assert.assertEquals;
 
+
 public class MainTest {
     // Keep a backup of the default input and output streams
     private final PrintStream originalOut = System.out;
@@ -39,7 +40,7 @@ public class MainTest {
 
     @Test
     public void testMainDriverAdd() {
-        testMainDriverWithParameters("double5", "Double 5 mode:\n");
+        testMainDriverWithParameters("add", "Add mode:\n");
     }
 
     @Test
@@ -52,14 +53,15 @@ public class MainTest {
         testMainDriverWithParameters("some random string", "Sorry, I didn't get that. Re-run the program to try again!");
     }
 
-    //junit test for double method:
+    //junit test for the convert method (USD -> CAD) in MainDriver
     @Test
-    public void testDouble(){
-        double answer = MainDriver.doubled(5);
-        double expectedAnswer = 25;
-
-        assertEquals(expectedAnswer,answer,0);
+    public void testConvert(){
+        double actual = MainDriver.convert(1);
+        double expectedValue = 1.32;
+        
+        assertEquals(expectedValue, actual, 0);
     }
+
 
     private void testMainDriverWithParameters(String input, String output) {
         // Simulate user input by using an input stream
