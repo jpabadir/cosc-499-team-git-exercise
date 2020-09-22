@@ -34,11 +34,6 @@ public class MainTest {
     }
 
     @Test
-    public void testMainDriverConvert() {
-        testMainDriverWithParameters("conVerT", "Convert mode:\n");
-    }
-
-    @Test
     public void testMainDriverDouble5() {
         testMainDriverWithParameters("double5", "Double5 mode:\n" +
                 "5 doubled is: 25.0\n");
