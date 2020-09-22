@@ -29,3 +29,5 @@ MainDriver.java's main method contains two methods for converting a user's numer
 2) convert
 - Takes in the double value that the user entered, and multiplies by it by the conversion rate from USD to CAD from 09/20/2020.
 - Within MainTest.java is the junit test "testConvert" to ensure that the implemntation of the convert method works as expected.
+3) double 5
+- Doubles the number 5 and gives the output of 25. Uses the doubled method.
