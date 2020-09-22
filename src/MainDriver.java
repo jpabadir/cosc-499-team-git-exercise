@@ -21,7 +21,7 @@ public class MainDriver {
             System.out.println("Double5 mode:");
             // Add code to handle this case here. Do not remove above print statement.
             double doubleVal =  5; //number to double
-            double doubled = doubleVal*doubleVal; //doubles number
+            double doubled = doubled(doubleVal); //doubles number
             System.out.println("5 doubled is: "+doubled);
         } else if (response.equalsIgnoreCase("InvertCase")) {
             System.out.println("Invert case mode:");
