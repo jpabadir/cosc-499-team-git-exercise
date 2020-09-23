@@ -43,12 +43,16 @@ public class MainTest {
     public void testMainDriverInvertCase() {
         testMainDriverWithParameters("invertCASE", "Invert case mode:\n");
     }
-
+    
     @Test
     public void testMainDriverInvalid() {
         testMainDriverWithParameters("some random string", "Sorry, I didn't get that. Re-run the program to try again!");
     }
-
+    
+    @Test
+    public void testMainDriverMultiplyBy100() {
+    	testMainDriverWithParameters();//need to fix
+    }
     //junit test for the convert method (USD -> CAD) in MainDriver
     @Test
     public void testConvert(){
@@ -73,7 +77,14 @@ public class MainTest {
         double expectedAnswer = 1000;
         assertEquals(expectedAnswer,answer,0);
     }
-
+    
+    //junit test for multiplied method
+    @Test
+    public void testMultiplyby100() {
+    	double answer = MainDriver.multiplied(15);
+    	double expectedAnswer = 1500;
+    	assertEquals(expectedAnswer,answer,0);
+    }
     private void testMainDriverWithParameters(String input, String output) {
         // Simulate user input by using an input stream
         final ByteArrayInputStream inContent = new ByteArrayInputStream(input.getBytes());
