@@ -10,6 +10,7 @@ Possible actions:
 A) Convert a given sum in USDs to CAD (at a pre-programmed rate); </br>
 B) double 5 if double5 mode is chosen by user's input; </br>
 C) triple 10 if triple10 mode is chosen by user's input; </br>
+D) Multiply 15 by 100 if MultiplyBy100 is chosen by user's input; </br>
 
 In all cases, we will deal with bad input from the user by using an if condition to check for such input, print an error message, and then interrupt the program. 
 
