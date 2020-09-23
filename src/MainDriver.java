@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class MainDriver {
     public static void main(String[] args) {
         System.out.println("Welcome to Leo, you virtual assistant!What would you like to do, today?");
-        System.out.print("Please type either 'Convert', 'Double5', or 'Triple10': ");
+        System.out.print("Please type either 'Convert', 'Double5', 'Triple10', or 'Multiplyby100': ");
         Scanner scanner = new Scanner(System.in);
         String response = scanner.next();
 
@@ -29,6 +29,12 @@ public class MainDriver {
             double tripleVal =  10; //number to double
             double tripled = tripled(tripleVal); //doubles number
             System.out.println("10 tripled is: "+ tripled);
+        } else if(response.equalsIgnoreCase("multiplyby100")) {
+        	System.out.print("MultiplyBy100 mode: ");
+        	// Add code to handle this case here. Do not remove above print statement.
+        	double multipliedval = 15;//number to multiply
+        	double multiplied = multiplied(multipliedval);//multiply number by 100
+        	System.out.print("15 multiplied by 100 is: " + multiplied);
         } else {
             System.out.print("Sorry, I didn't get that. Re-run the program to try again!");
         }
@@ -36,7 +42,8 @@ public class MainDriver {
         scanner.close();
     }
 
-    public static double getNumericInput() { // a method to obtain a numeric from the user
+
+	public static double getNumericInput() { // a method to obtain a numeric from the user
         double userValue = 0.0;
         try {
             System.out.print("Please enter a number to convert from USD to CAD: ");
@@ -64,5 +71,7 @@ public class MainDriver {
 
     //method to triple number
     public static double tripled(double n) {return n*n*n;}
-
+    
+    //method to multiply by 100
+    public static double multiplied(double n) {return n*100;}
 }
