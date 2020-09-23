@@ -36,3 +36,7 @@ Squares the number 5 and outputs 25. Uses the doubled method to test that the do
 
 <b>Cube Feature:</b>
 Cubes the number 10 and outputs 1000. Uses the tripled method to test that the triple10 feature is working correctly.
+
+<b>Multiply Feature:</b>
+- Multiply the number 15 by 100 and the result is 1500.
+- Tests Multiply method in MainTest.Java to check functionalities.
