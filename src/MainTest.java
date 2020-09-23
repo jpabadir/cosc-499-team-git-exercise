@@ -32,27 +32,18 @@ public class MainTest {
         System.setOut(originalOut);
         System.setIn(originalIn);
     }
-
-    @Test
-    public void testMainDriverDouble5() {
-        testMainDriverWithParameters("double5", "Double5 mode:\n" +
-                "5 doubled is: 25.0\n");
-    }
-
-    @Test
-    public void testMainDriverInvertCase() {
-        testMainDriverWithParameters("invertCASE", "Invert case mode:\n");
-    }
     
     @Test
     public void testMainDriverInvalid() {
-        testMainDriverWithParameters("some random string", "Sorry, I didn't get that. Re-run the program to try again!");
+        // Simulate user input by using an input stream
+        final ByteArrayInputStream inContent = new ByteArrayInputStream("random string".getBytes());
+        System.setIn(inContent);
+
+        MainDriver.main(new String[0]);
+        // Check that the right string was printed at the end of the system output
+        assertEquals("Sorry, I didn't get that. Re-run the program to try again!", outContent.toString().split("or 'Multiplyby100': ")[1]);
     }
-    
-    @Test
-    public void testMainDriverMultiplyBy100() {
-    	testMainDriverWithParameters();//need to fix
-    }
+
     //junit test for the convert method (USD -> CAD) in MainDriver
     @Test
     public void testConvert(){
@@ -84,15 +75,6 @@ public class MainTest {
     	double answer = MainDriver.multiplied(15);
     	double expectedAnswer = 1500;
     	assertEquals(expectedAnswer,answer,0);
-    }
-    private void testMainDriverWithParameters(String input, String output) {
-        // Simulate user input by using an input stream
-        final ByteArrayInputStream inContent = new ByteArrayInputStream(input.getBytes());
-        System.setIn(inContent);
-
-        MainDriver.main(new String[0]);
-        // Check that the right string was printed at the end of the system output
-        assertEquals(output, outContent.toString().split("or 'InvertCase': ")[1]);
     }
 }
 
